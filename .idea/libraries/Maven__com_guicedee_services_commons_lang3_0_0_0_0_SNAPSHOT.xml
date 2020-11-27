@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.guicedee.services:commons-lang3:0.0.0_0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/commons-lang3/0.0.0_0-SNAPSHOT/commons-lang3-0.0.0_0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/commons-lang3/0.0.0_0-SNAPSHOT/commons-lang3-0.0.0_0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/commons-lang3/0.0.0_0-SNAPSHOT/commons-lang3-0.0.0_0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

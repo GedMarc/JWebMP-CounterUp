@@ -1,0 +1,38 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+      <parent>
+        <groupId>com.jwebmp.plugins.jquery</groupId>
+        <artifactId>jwebmp-plugins-jquery-parent</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jwebmp-jquery-counterup</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Counter Up</name>
+    <description>The JWebMP Implementation for a new basic compoennt</description>
+    <url>https://github.com/GedMarc/JWebMP-CounterUp</url>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/GedMarc/JWebMP-CounterUp/issues</url>
+    </issueManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jwebmp.core</groupId>
+            <artifactId>jwebmp-core</artifactId>
+        </dependency>
+
+    </dependencies>
+    <scm>
+        <url>https://github.com/GedMarc/JWebMP-CounterUp.git</url>
+    </scm>
+
+    <ciManagement>
+        <system>TeamCity</system>
+        <url>http://jwebmp.com/teamcity</url>
+    </ciManagement>
+
+</project>
