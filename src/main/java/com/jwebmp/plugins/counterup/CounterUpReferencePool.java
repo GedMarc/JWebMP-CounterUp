@@ -29,7 +29,7 @@ public enum CounterUpReferencePool
 		implements ReferencePool
 {
 
-	CounterUpCoreReference(new JavascriptReference("CounterUpCoreReference", 5.1, "bower_components/counterup/jquery.counterup.min.js"),null)
+	CounterUpCoreReference(new JavascriptReference("CounterUpCoreReference", 1.0, "bower_components/counterup/jquery.counterup.min.js"),null)
 
 	;
 

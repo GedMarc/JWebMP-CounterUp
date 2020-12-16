@@ -18,30 +18,30 @@ package com.jwebmp.plugins.counterup;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 import jakarta.validation.constraints.NotNull;
 
-/**
- * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
- * <p>
- * HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries WARNING: Respond.js doesn't work if you view the page via
- * file://
- */
 @PluginInformation(pluginName = "Counter Up",
-        pluginDescription = "CounterUp does only one thing: replace the browser's default scrollbar with a custom CSS-styled one without losing performances. Unlike some popular plugins, CounterUp doesn't mimic scroll with Javascript, causing janks and strange scrolling behaviours... You keep the awesomeness of native scrolling...with a custom scrollbar!\n" +
-                "CounterUp does NOT implement a custom scroll behaviour. It keeps the native overflow: auto scroll and only replace the scrollbar visual appearance.",
+        pluginDescription = "Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it)." +
+                " Simply add the class counterup to any component that has a number",
         pluginUniqueName = "jwebmp-counterup",
-        pluginVersion = "5.1.0",
-        pluginCategories = "counterup,ui,web ui, framework",
-        pluginSubtitle = "CounterUp makes sidebar development faster and easier.",
-        pluginSourceUrl = "https://github.com/Grsmto/counterup",
+        pluginVersion = "1.0.0",
+        pluginCategories = "display,counter",
+        pluginSubtitle = "Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it)",
+        pluginSourceUrl = "https://github.com/bfintal/Counter-Up",
         pluginWikiUrl = "https://github.com/GedMarc/JWebMP-CounterUp/wiki",
         pluginGitUrl = "https://github.com/GedMarc/JWebMP-CounterUp",
-        pluginIconUrl = "bower_components/counterup/counterupicon.jpg",
-        pluginIconImageUrl = "bower_components/counterup/counteruplogo.jpg",
-        pluginOriginalHomepage = "https://github.com/Grsmto/counterup",
-        pluginDownloadUrl = "https://jwebmp.com/?p=CounterUp")
+        pluginIconUrl = "",
+        pluginIconImageUrl = "",
+        pluginOriginalHomepage = "https://github.com/bfintal/Counter-Up",
+        pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.jquery/jwebmp-jquery-counterup",
+        pluginGroupId = "com.jwebmp.plugins.jquery",
+        pluginArtifactId = "jwebmp-jquery-counterup",
+        pluginModuleName = "com.jwebmp.plugins.counterup",
+        pluginStatus = PluginStatus.Released
+)
 public class CounterUpPageConfigurator
         implements IPageConfigurator<CounterUpPageConfigurator> {
     /**
