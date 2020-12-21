@@ -26,7 +26,7 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "Counter Up",
         pluginDescription = "Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it)." +
                 " Simply add the class counterup to any component that has a number",
-        pluginUniqueName = "jwebmp-counterup",
+        pluginUniqueName = "counterup",
         pluginVersion = "1.0.0",
         pluginCategories = "display,counter",
         pluginSubtitle = "Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it)",
