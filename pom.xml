@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.jquery</groupId>
     <artifactId>jwebmp-jquery-counterup</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Counter Up</name>
     <description>The JWebMP Implementation for a new basic compoennt</description>
     <url>https://github.com/GedMarc/JWebMP-CounterUp</url>
