@@ -16,12 +16,12 @@
  */
 package com.jwebmp.plugins.counterup;
 
-import com.jwebmp.core.Page;
-import com.jwebmp.core.plugins.PluginInformation;
-import com.jwebmp.core.plugins.PluginStatus;
-import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
-import com.jwebmp.core.services.IPageConfigurator;
-import jakarta.validation.constraints.NotNull;
+import com.jwebmp.core.*;
+import com.jwebmp.core.base.angular.services.annotations.*;
+import com.jwebmp.core.base.angular.services.annotations.angularconfig.*;
+import com.jwebmp.core.plugins.*;
+import com.jwebmp.core.services.*;
+import jakarta.validation.constraints.*;
 
 @PluginInformation(pluginName = "Counter Up",
         pluginDescription = "Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it)." +
@@ -42,65 +42,20 @@ import jakarta.validation.constraints.NotNull;
         pluginModuleName = "com.jwebmp.plugins.counterup",
         pluginStatus = PluginStatus.Released
 )
+@TsDependency(value = "jquery.counterup",version = "^2.1.0")
+@NgScript("node_modules/jquery.counterup/jquery.counterup.js")
 public class CounterUpPageConfigurator
         implements IPageConfigurator<CounterUpPageConfigurator> {
-    /**
-     * If this configurator is enabled
-     */
-    private static boolean enabled = true;
-
-    /**
-     * The default page configurator for counterup
-     */
-    public CounterUpPageConfigurator() {
-        //Nothing Needed
-    }
-
-    /**
-     * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
-     * <p>
-     * If this configurator is enabled
-     *
-     * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
-     */
-    public static boolean isEnabled() {
-        return CounterUpPageConfigurator.enabled;
-    }
-
-    /**
-     * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
-     * <p>
-     * If this configurator is enabled
-     *
-     * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
-     */
-    public static void setEnabled(boolean mustEnable) {
-        CounterUpPageConfigurator.enabled = mustEnable;
-    }
-
-
-    /**
-     * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-     * <p>
-     * HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries WARNING: Respond.js doesn't work if you view the page
-     * via file://
-     *
-     * @return
-     */
+   
     @NotNull
     @Override
     public Page<?> configure(Page<?> page) {
-        if (!page.isConfigured() && enabled()) {
-            JQueryPageConfigurator.setRequired(true);
-            page.getBody()
-                    .addJavaScriptReference(CounterUpReferencePool.CounterUpCoreReference.getJavaScriptReference());
-        }
         return page;
     }
 
     @Override
     public boolean enabled() {
-        return CounterUpPageConfigurator.enabled;
+        return true;
     }
 
 }
